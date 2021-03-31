@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="template" xml:space="preserve">
+
+    <!-- Modal on Load when opening preview mode the first time -->
+  <t t-name="website.cookies_mode_notice">
+    <div class="modal fade " id="preview_intro" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="CookieNoticeMode">
+        <div class="modal-dialog bp_notice_banner" role="document">
+          <div class="modal-content notice-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="notice-body">
+                <img class="logo logo_white" src="/theme_bloopark/static/src/images/logo_footer.svg"/>
+                <div class="notice-text-block">
+                  We use cookies to personalize and enhance your experience on our site. Visit our Cookie Policy to learn more or manage your personal preferences in our Cookie Consent Tool. By using our site, you agree to our use of cookies.
+                </div>
+              <button type="button" class="notice_button btn-link"
+                      data-dismiss="modal"
+                      aria-label="Close">
+                  Exit
+                </button>
+              <button type="button" class="accept_notice_button notice_button btn-link"
+                      data-dismiss="modal"
+                      aria-label="Accept">
+                  Accept
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </t>
+  <t t-name="website.cookies_mode">
+      <div class="modal fade " id="preview_intro" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="CookieModalMode">
+        <div class="modal-dialog bp_modal_dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header lr_modal_header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body bp_modal_body">
+              <div>
+                <div class="bp_text_inner text-center pb128">
+                  <h1>Bringing <span class="h-normal">Your</span> Business <span class="h-normal">To</span><br/> <span class="h-normal">Next</span> Level</h1>
+                  <p>We love designing and developing in Odoo, reaching<br/>beyond expectations for you.</p>
+                </div>
+
+              </div>
+            </div>
+            <div class="modal-footer lr_modal_footer">
+              <button type="button" class="btn second-button accept_modal_button"
+                      data-dismiss="modal"
+                      aria-label="Close">
+                Remove Modal
+              </button>
+              <button type="button" class="btn second-button"
+                      data-dismiss="modal"
+                      aria-label="Close">
+                Close Modal
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </t>
+
+</templates>

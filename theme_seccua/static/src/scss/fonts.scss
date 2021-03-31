@@ -1,0 +1,84 @@
+/**
+ * Fonts which are not google fonts and thus need to be served by Odoo directly.
+ * Ideally, using google fonts is always better.
+ */
+
+//------------------------------------------------------------------------------
+// BabasNeue
+//------------------------------------------------------------------------------
+@font-face {
+    font-family: "Noticia-Bold";
+    src: url(/theme_seccua/static/src/fonts/Noticia-Bold.ttf);
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Noticia-Extrabold";
+    src: url(/theme_seccua/static/src/fonts/Noticia-Extrabold.ttf);
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Noticia-Light";
+    src: url(/theme_seccua/static/src/fonts/Noticia-Light.ttf);
+  }
+  @font-face {
+    font-family: "Noticia-Regular";
+    src: url(/theme_seccua/static/src/fonts/Noticia-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Noticia-Thin";
+    src: url(/theme_seccua/static/src/fonts/Noticia-Thin.ttf);
+  }
+  
+  @font-face {
+      font-family: 'Noticia Text';
+      src: url('/theme_seccua/static/src/fonts/Noticia-Light.eot');
+      src: url('/theme_seccua/static/src/fonts/Noticia-Light.eot?#iefix') format('embedded-opentype'),
+          url('/theme_seccua/static/src/fonts/Noticia-Light.woff2') format('woff2'),
+          url('/theme_seccua/static/src/fonts/Noticia-Light.woff') format('woff'),
+          url('/theme_seccua/static/src/fonts/Noticia-Light.ttf') format('truetype'),
+          url('/theme_seccua/static/src/fonts/Noticia-Light.svg#Noticia-Light') format('svg');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+  }
+  @font-face {
+      font-family: 'Noticia Text';
+      src: url('/theme_seccua/static/src/fonts/Noticia-Extrabold.eot');
+      src: url('/theme_seccua/static/src/fonts/Noticia-Extrabold.eot?#iefix') format('embedded-opentype'),
+          url('/theme_seccua/static/src/fonts/Noticia-Extrabold.woff2') format('woff2'),
+          url('/theme_seccua/static/src/fonts/Noticia-Extrabold.woff') format('woff'),
+          url('/theme_seccua/static/src/fonts/Noticia-Extrabold.ttf') format('truetype'),
+          url('/theme_seccua/static/src/fonts/Noticia-Extrabold.svg#Noticia-Extrabold') format('svg');
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+  }
+  @font-face {
+      font-family: 'NoticiaOblique';
+      src: url('/theme_seccua/static/src/fonts/NoticiaOblique-Light.eot');
+      src: url('/theme_seccua/static/src/fonts/NoticiaOblique-Light.eot?#iefix') format('embedded-opentype'),
+          url('/theme_seccua/static/src/fonts/NoticiaOblique-Light.woff2') format('woff2'),
+          url('/theme_seccua/static/src/fonts/NoticiaOblique-Light.woff') format('woff'),
+          url('/theme_seccua/static/src/fonts/NoticiaOblique-Light.ttf') format('truetype'),
+          url('/theme_seccua/static/src/fonts/NoticiaOblique-Light.svg#NoticiaOblique-Light') format('svg');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+  }
+  @font-face {
+    font-family: 'Helvetica';
+    src: url('/theme_seccua/static/src/fonts/Helvetica.woff2') format('woff2'),
+        url('/theme_seccua/static/src/fonts/Helvetica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica_Light-Normal';
+    src: url('/theme_seccua/static/src/fonts/Helvetica_Light-Normal.woff2') format('woff2'),
+        url('/theme_seccua/static/src/fonts/Helvetica_Light-Normal.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,244 @@
+/*----------------------------------------*/
+/*  01. Theme default CSS
+/*----------------------------------------*/
+
+/** @group Base */
+/** @section Reset Styles */
+a {
+    background-color: transparent;
+}
+a:active, a:hover {
+    outline: 0;
+    text-decoration: none;
+}
+a:focus,
+button:focus {
+	outline: none !important;
+}
+
+button::-moz-focus-inner {
+	border: 0;
+}
+
+*:focus {
+	outline: none;
+}
+
+blockquote {
+	padding: 0;
+	margin: 0;
+}
+
+input,
+button,
+select,
+textarea {
+	outline: none;
+}
+
+label {
+	margin-bottom: 0;
+}
+
+p {
+	margin: 0;
+}
+
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul li,
+ol li {
+	display: block;
+}
+
+dl {
+	margin: 0;
+}
+
+dt,
+dd {
+	line-height: inherit;
+}
+
+dt {
+	font-weight: inherit;
+}
+
+dd {
+	margin-bottom: 0;
+}
+
+cite {
+	font-style: normal;
+}
+.font-size__basic {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    @media only screen and (min-width: 1400px) {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+.font-size--sm {
+    font-size: .9rem;
+}
+form {
+	margin-bottom: 0;
+}
+
+address {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+figure {
+	margin-bottom: 0;
+}
+
+html p a:hover {
+	text-decoration: none;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+
+html {
+	font-size: 16px
+}
+.hide {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 0;
+    overflow: hidden;
+    width: 0;
+    padding: 0 !important;
+    display: none !important;
+}
+.flex {
+	display: flex
+}
+
+.flex--wrap {
+	flex-wrap: wrap
+}
+
+.flex--column {
+	flex-direction: column
+}
+
+.flex--row-reverse {
+	flex-direction: row-reverse
+}
+.block {
+    display: block;
+}
+.inline-block {
+    display: inline-block;
+}
+#wrapwrap {
+    .input-group {
+        display: table;
+        border-collapse: separate;
+    }
+} 
+
+.input-group-field {
+    width: 100%;
+    background: #f1f1f1;
+    border-radius: 4px;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+}
+.input-group-btn {
+    position: relative;
+    white-space: nowrap;
+    width: 1%;
+    padding-left: 16px;
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1146px;
+    }
+}
+
+/*-- Elements Colors --*/
+.bg--secondary-background {
+    background-color: theme-color('primary');
+}
+/*-- Elements Spacing Font --*/
+.color--header-active {
+	transition: color .2s ease-in-out
+}
+
+
+/*-- Snippets --*/
+.announcement {
+    font-size: 14px;
+    .container {
+        padding: 20px 0;
+    }
+    .link {
+        border-bottom: 1px solid #ffffff;
+        color: #ffffff;
+        &:after {
+            border: solid #fff;
+            border-width: 0 1px 1px 0;
+        }
+        &:before {
+            border: 1px solid #ffffff;
+            border-width: inherit;
+        }
+    }
+    h4 {
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: Noticia-Bold;
+        letter-spacing: 1px;
+    }
+}
+
+.link {
+    position: relative;
+    color: theme-color('primary');
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid theme-color('primary');
+    &:after {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border: solid theme-color('primary');
+        border-width: 0 thin thin 0;
+        left: calc(100% + 18px);
+        top: calc(50% - 4px);
+        transform: rotate(-45deg);
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        border: 1px solid theme-color('primary');
+        border-width: inherit;
+        left: calc(100% + 15px);
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
+}
+.font-size__heading-1 {
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 300;
+    margin-right: -70px;
+    margin-bottom: 40px;
+    z-index: 9;
+    position: relative;
+    color: theme-color('primary');
+}

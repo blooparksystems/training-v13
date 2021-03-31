@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+<!-- Customize header  -->
+<template id="layout_layout" inherit_id="website.layout" name="replace header">
+    <xpath expr="//header//nav" position="before">
+        <div class="top_bar md--dn--hide">
+            <div class="container d-flex align-items-center justify-content-between pl-0 pr-0">
+                <div class="header-table__center">
+                    <div class="dropdown">
+                        <div class="dropdown-item active flex items--center">
+                            <span class="converter flex">
+                                <img src="/theme_seccua/static/src/images/usa-flag.svg" alt="Germany Flag" width="13"/>
+                            </span>
+                            <p class="converter-label flex">United States 
+                                <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="7.414" height="4.207" viewBox="0 0 7.414 4.207">
+                                <g id="DOWN_BLACK" data-name="DOWN BLACK" transform="translate(6.707 3.707)">
+                                    <path id="DOWN_BLACK-2" data-name="DOWN BLACK" d="M0,0,3,3,6,0" transform="translate(-6 -3)" fill="none" stroke="#7d7d7d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                                </g>
+                                </svg>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="dropdown-item non-active flex items--center">
+                            <a href="https://de.seccua.com" class="flex items--center">
+                                <span class="converter flex">
+                                    <img src="/theme_seccua/static/src/images/germany-flag.svg" alt="USA Flag" width="13"/>
+                                </span>
+                                <span class="converter-label flex">Germany</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__meta">
+                    <nav role="navigation">
+                        <ul class="t--header-navigation top-site-nav site-nav list--reset m0 p0 font-size--m mxn1 no-wrap inline-block top-list">
+                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                <t t-call="website.submenu">
+                                    <t t-set="item_class" t-value="'nav__item inline-block'"/>
+                                    <t t-set="link_class" t-value="'site-nav__link  px1 align-top header__link inline-block no-wrap'"/>
+                                </t>
+                            </t>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </xpath>
+
+    <xpath expr="//header//div[hasclass('navbar-collapse')]" position="replace">
+        <div class="header__meta">
+            <div class="d-flex align-items-center justify-content-end">
+                <nav role="navigation" class="md--dn--hide">
+                    <ul id="top_menu">
+                        <li class="nav__item inline-block  pr-5">
+                        <a href="#" class="site-nav__link header-border-link color--primary-text hv--div--border-bottom--primary-text color--header-active px1 align--top header__link inline-block no-wrap" data-top-level-item="">
+                            <div class="header__link-wrapper">Urspring by Seccua</div>
+                        </a>
+                        </li>
+                        <li class="nav__item inline-block  pr-5">
+                        <a href="#" class="site-nav__link header-border-link color--primary-text hv--div--border-bottom--primary-text color--header-active px1 align--top header__link inline-block no-wrap" data-top-level-item="">
+                            <div class="header__link-wrapper">Water Quality Report</div>
+                        </a>
+                        </li>
+                        
+                        
+                        <li class="site-nav--has-submenu inline-block hide" data-desktop-navigation-more-link="" style="">
+                        <a class="site-nav__link header-border-link color--primary-text hv--div--border-bottom--primary-text color--header-active px2 inline-block header__link no-wrap pointer" data-desktop-navigation-more-link-trigger="" data-top-level-item="" tabindex="0">
+                            <div class="header__link-wrapper">
+                            More
+                            </div>
+                        </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <div class="single-icon search-icon-blk">
+                        <a href="#" class="pr-3">
+                            <span class="search-icon">
+                                <svg id="Search" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <rect id="Rectangle_693" data-name="Rectangle 693" width="16" height="16" fill="none"/>
+                                <path id="Path_208" data-name="Path 208" d="M15.9,14.5l-3.3-3.3A6.847,6.847,0,0,0,14,7,6.957,6.957,0,0,0,7,0,6.957,6.957,0,0,0,0,7a6.957,6.957,0,0,0,7,7,6.847,6.847,0,0,0,4.2-1.4l3.3,3.3ZM2,7A4.951,4.951,0,0,1,7,2a4.951,4.951,0,0,1,5,5,4.951,4.951,0,0,1-5,5A4.951,4.951,0,0,1,2,7Z"/>
+                                </svg>
+
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="single-icon  md--dn--hide">
+                        <a href="#" class="pr-3">
+                        <span class="hide">+1 (844) 533-1305</span>
+                        <span class="call">
+                            <svg class="phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15.978" height="16" viewBox="0 0 15.978 16">
+                            <defs>
+                                <clipPath id="clip-path">
+                                <rect id="Rectangle_1086" data-name="Rectangle 1086" width="15.978" height="16" fill="none"/>
+                                </clipPath>
+                            </defs>
+                            <g id="PHONE" transform="translate(7.989 8)">
+                                <g id="Group_251" data-name="Group 251" transform="translate(-7.989 -8)" clip-path="url(#clip-path)">
+                                <path id="Path_1367" data-name="Path 1367" d="M15.516,11.871V14.06a1.459,1.459,0,0,1-1.459,1.459h-.146a14.446,14.446,0,0,1-6.275-2.262A14.227,14.227,0,0,1,3.259,8.88,14.446,14.446,0,0,1,1,2.605,1.459,1.459,0,0,1,2.31,1H4.645A1.459,1.459,0,0,1,6.1,2.24a9.412,9.412,0,0,0,.511,2.043A1.459,1.459,0,0,1,6.25,5.815l-.876.948a11.674,11.674,0,0,0,4.378,4.378l.948-.948A1.459,1.459,0,0,1,12.233,9.9a9.412,9.412,0,0,0,2.043.511A1.459,1.459,0,0,1,15.516,11.871Z" transform="translate(-0.267 -0.27)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                </g>
+                            </g>
+                            </svg>
+
+                        </span>
+                        </a>
+                    </div>
+                    <div class="single-icon  md--dn--hide">
+                        <a href="#" class="px1 relative site-header__cart">
+                                <span class="cart__icon"><span class="icon-wrapper">
+                                    <svg class="cart" id="shopping-cart" xmlns="http://www.w3.org/2000/svg" width="18.762" height="18" viewBox="0 0 18.762 18">
+                                        <circle id="Ellipse_8" data-name="Ellipse 8" cx="1" cy="1" r="1" transform="translate(6.167 15)" fill="none" stroke="#00378b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                        <circle id="Ellipse_9" data-name="Ellipse 9" cx="1" cy="1" r="1" transform="translate(13.762 15)" fill="none" stroke="#00378b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                        <path id="Path_790" data-name="Path 790" d="M1,1H4.048L6.09,9.927A1.492,1.492,0,0,0,7.613,11h7.406a1.492,1.492,0,0,0,1.524-1.073l1.219-5.593H4.81" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                    </svg>
+
+                                </span></span>
+                            <span id="CartCount" style="background-color: rgba(255, 0, 0, 0);"></span>
+                        <div id="minicart_count"><span>1</span></div></a>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </xpath>
+
+    <xpath expr="//header//nav[hasclass('navbar')]" position="attributes">
+        <attribute name="class" separator=" " add="header__main pt-3 pb-3"/>
+    </xpath>
+
+    <xpath expr="//header//nav[hasclass('navbar')]//div[hasclass('container')]" position="attributes">
+        <attribute name="class" separator=" " add="pl-0 pr-0"/>
+    </xpath>
+
+    <xpath expr="//footer//section//div[hasclass('bottom-bar')]" position="replace">
+    </xpath>
+
+    <xpath expr="//footer//section//div[hasclass('container')]" position="replace">
+        <div class="container pl-0 pr-0 pt-5 pb-5 mb-5">
+            <div class="row s_footer_top">
+                <div class="col-lg-5">
+                    <a href="/" class="footer-logo">
+                        <span t-field="website.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name" />
+                    </a>
+                    <div class="richtext mb-2 mt-3">
+                        <p>Seccua is the global leader in residential, commercial, and municipal water purification using advanced ultrafiltration technology. Headquartered in Germany, Seccua is the maker of Urspring, the world’s premier whole house water filter that eliminates up to 99.99% of all pathogens and delivers pure, safe, delicious water to every tap in the home. Used with additional Seccua filters targeting toxins, trace pharmaceuticals, arsenic, and limescale, Urspring is the most complete solution for whole house water treatment on the market.</p>
+                    </div>
+                    <div class="mt-5 mb-5">   
+                        <div class="mb1 address mb2">
+                            <ul class="font-size__basic list--reset p0 m0 justify--start flex--wrap">
+                                <li class=""><span class="footer__nav-link  inline-block">Seccua Americas, LLC</span></li>
+                                <li class=""><span class="footer__nav-link  inline-block">1601 Concord Pike</span></li>
+                                <li class=""><span class="footer__nav-link  inline-block">Wilmington, DE 19803 USA</span></li>
+                                <li class=""><span class="footer__nav-link  inline-block"><a href="tel:15037665551">+1 (503) 7665-551</a></span></li> 
+                                <li class=""><span class="footer__nav-link  inline-block"><a href="mailto:cs@seccua.com">cs@seccua.com</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <ul class="">
+                            <li class="inline-block mr-3">
+                                <a href="#" title="Seccua-USA on Facebook">
+                                    <span class="icon-wrapper">
+                                        <i class="fa fa-facebook-f"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="inline-block mr-3">
+                                <a href="#" title="Seccua-USA on Instagram">
+                                    <span class="icon-wrapper">
+                                        <i class="fa fa-instagram"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="offset-md-1 col-lg-6">
+                    <div class="row right-footer">
+                        <div class="col-lg-12 mb-5">
+                            <h3>Stay water wise</h3>
+                            <p>Get the latest water news and special offers straight to your inbox.</p>
+                            
+                            <form method="post" action="#" id="contact_form" accept-charset="UTF-8" class="mt-4">
+                                <div class="input-group">
+                                    <label for="Email" class="hide">Enter email</label>
+                                    <input type="email" name="contact[email]" id="Email" class="input-group-field px2 py1 bg--transparent border--none color--primary-text font-size--s" value="" placeholder="Enter email"/>
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-alpha" name="commit" id="Subscribe">
+                                            <span class="newsletter__submit">Sign up</span>
+                                        </button>
+                                    </span>
+                                </div>
+                            
+                            </form>
+                        </div>
+                
+                        <div class="col-lg-4">
+                            <h4>Products</h4>
+                            <div class="grid__item footer-links ">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="footer__nav-link inline-block">
+                                        <span class="footer__nav-link-span">Urspring</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer__nav-link inline-block">
+                                        <span class="footer__nav-link-span">Parts + Replacements</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer__nav-link inline-block">
+                                        <span class="footer__nav-link-span">Virex Pro Estate</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#" class="footer__nav-link inline-block">
+                                        <span class="footer__nav-link-span">UrSpring Hot Water Circulation</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer__nav-link inline-block">
+                                        <span class="footer__nav-link-span">Virex Pro Connect</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer__nav-link inline-block">
+                                        <span class="footer__nav-link-span">Phoenix GT</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                
+                        <div class="col-lg-4">
+                            <h4 class="grid__item">About Seccua </h4>
+                            <div class="grid__item footer-links ">
+                                <ul class="font-size__basic list--reset p0 m0   justify--start flex--wrap">
+                                    <li class="">
+                                        <a href="/pages/our-mission" class="footer__nav-link inline-block mobile-nav__link color--primary-text ">
+                                        <span class="footer__nav-link-span">Our Mission</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="">
+                                        <a href="/pages/become-a-seccua-reseller-today" class="footer__nav-link inline-block mobile-nav__link color--primary-text ">
+                                        <span class="footer__nav-link-span">Become a Dealer</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="">
+                                        <a href="/pages/sitemap" class="footer__nav-link inline-block mobile-nav__link color--primary-text ">
+                                        <span class="footer__nav-link-span">Sitemap</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                
+                        <div class="grid__item  font-size__basic md--up--one-whole lg--up--one-third mb3 lg-up--mb0">                
+                            <div class="grid footer-grid">
+                                <h4 class="grid__item">Resources</h4>
+                                <div class="grid__item footer-links ">
+                                    <ul class="font-size__basic list--reset p0 m0 justify--start flex--wrap">  
+                                        <li class="">
+                                            <a href="#" class="footer__nav-link inline-block mobile-nav__link color--primary-text ">
+                                            <span class="footer__nav-link-span">Support</span>
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="">
+                                            <a href="#" class="footer__nav-link inline-block mobile-nav__link color--primary-text ">
+                                            <span class="footer__nav-link-span">Resource Library</span>
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="">
+                                            <a href="/pages/shop-policies" class="footer__nav-link inline-block mobile-nav__link color--primary-text ">
+                                            <span class="footer__nav-link-span">90-Day, Risk-Free Trial</span>
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="">
+                                            <a href="/pages/shop-policies" class="footer__nav-link inline-block mobile-nav__link color--primary-text ">
+                                            <span class="footer__nav-link-span">Refunds + Shipping</span>
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="">
+                                            <a href="/pages/warranty" class="footer__nav-link inline-block mobile-nav__link color--primary-text ">
+                                            <span class="footer__nav-link-span">Warranty</span>
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="">
+                                            <a href="/pages/financing" class="footer__nav-link inline-block mobile-nav__link color--primary-text ">
+                                            <span class="footer__nav-link-span">Financing</span>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar mt-5">
+            <div class="container pl-0 pr-0" meta-oe-xpath-replacing="div">
+                <div class="copy-block">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex">
+                            <div class="d-flex mr-5">
+                                <span class="converter flex">
+                                    <img src="/theme_seccua/static/src/images/usa-flag.svg" alt="Germany Flag" width="13"/>
+                                </span>
+                                <a class="footer__nav-link">United States</a>
+                            </div>
+                            <div class="d-flex align-content-center flex-wrap">
+                                <ul class="font-size__basic list--reset p0 m0 flex flex--wrap inline-block-menu">
+                                    <li><a class="footer__nav-link mr-3" href="/pages/terms-of-use">Terms of Use</a></li>
+                                    <li><a class="footer__nav-link mr-3" href="/pages/privacy-policy">Privacy Policy</a></li>
+                                </ul> 
+                            </div>
+                        </div>
+                        <div class="d-flex align-content-center flex-wrap copyright">Site by Bloopark</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="chat-button chat-open">Chat with us</button>
+    </xpath>
+    <xpath expr="//div[hasclass('o_footer_copyright')]" position="replace">
+    </xpath>
+</template>
+
+</odoo> 
