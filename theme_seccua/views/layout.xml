@@ -133,9 +133,6 @@
         <attribute name="class" separator=" " add="pl-0 pr-0"/>
     </xpath>
 
-    <xpath expr="//footer//section//div[hasclass('bottom-bar')]" position="replace">
-    </xpath>
-
     <xpath expr="//footer//section//div[hasclass('container')]" position="replace">
         <div class="container pl-0 pr-0 pt-5 pb-5 mb-5">
             <div class="row s_footer_top">
