@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="place_into_bar" inherit_id="website.snippets" name="Place into bar">
+        <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+            <t t-snippet="theme_seccua.snippet_announcement"
+            t-thumbnail="/theme_seccua/static/src/images/snippets/announcement.png"/>
+        </xpath>
+        <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+            <t t-snippet="theme_seccua.snippet_hero"
+            t-thumbnail="/theme_seccua/static/src/images/snippets/s_image_text.png"/>
+        </xpath>
+        <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+            <t t-snippet="theme_seccua.snippet_text-image"
+            t-thumbnail="/theme_seccua/static/src/images/snippets/s_text_image.png"/>
+        </xpath>
+    </template>
+
+    <template id="snippet_announcement" name="Announcement">
+        <section class="snippet_announcement announcement bg--secondary-background">
+            <div class="container d-flex justify-content-center align-items-center text-white pt-3 pb-3">
+                <h4 class="text-white mr-2">What’s coming out of your tap?</h4>
+                Get your customized water quality report.
+                <a href="#" title="Water Report" class="link ml-2">Enter your zip code</a>
+            </div>
+        </section>
+    </template>
+
+
+    <template id="snippet_hero" name="hero">
+        <section class="s_cover s_hero parallax s_parallax_no_overflow_hidden pt192 pb224" data-scroll-background-ratio="0" data-name="Cover" style="background-image: none;">
+            <span class="s_parallax_bg oe_img_bg oe_custom_bg" style=" background-position: 0% 0%;"></span>
+            <div class="container">
+            <div class="text-center col-lg-7 flex-column">
+                <div class="s_title" data-name="Title">
+                <h3 class="d-flex _title_thin justify-content-center">
+                    <img class="img-fluid o_we_custom_image mr-3" src="/theme_seccua/static/src/images/urspring.png" data-original-title="" title="" aria-describedby="tooltip39693"/>
+                    <span class="align-self-center">WHOLE HOUSE WATER FILTRATION</span>
+                </h3>
+                </div>
+                <div class="s_text pt16 pb16" data-name="Text" style="">
+                <h4>
+                    <span>Because every tap counts</span>
+                </h4>
+                </div>
+                <div class="s_btn pt16 pb16 text-center mt-5" data-name="Buttons">
+                    <a href="#" class="btn btn-alpha" data-original-title="" title="" aria-describedby="tooltip628987">LEARN MORE</a>
+                </div>
+            </div>
+            </div>
+        </section>
+    </template>
+
+
+    <template id="snippet_hero_opt" name="Snippet Hero Options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="after">
+            <div data-selector=".s_hero,.new_text_image"> <!-- Options group -->
+                <we-collapse-area>
+                      <we-toggler>Define Direction</we-toggler>
+                      <we-collapse data-no-preview="true">
+                          <we-button data-select-class="">Text Image</we-button>
+                          <we-button data-select-class="left-sided">Image Text</we-button>
+                      </we-collapse>
+                  </we-collapse-area>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="footer_opt" name="Footer Options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="after">
+            <div data-selector=".s_footer"> <!-- Options group -->
+                <we-collapse-area>
+                      <we-toggler>Define Direction</we-toggler>
+                      <we-collapse data-no-preview="true">
+                          <we-button data-select-class="">Text + Share Buttons ==> Newsletter + menu</we-button>
+                          <we-button data-select-class="left-sided">Newsletter + menu ==> Text + Share Buttons</we-button>
+                      </we-collapse>
+                  </we-collapse-area>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="snippet_text-image" name="text-image">
+        <section class="new_text_image" data-name="Text - Image">
+            <div class="container pl-0 pr-0">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 pt16 pb16">
+                        <h2 class="font-size__heading-1">The health of your home starts with the purity of every drop.</h2>
+                        <div class="s_btn text-left pt16 pb16" data-name="Buttons">
+                            <a href="#" class="link">Meet Urspring by Seccua</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pt16 pb16">
+                        <img src="/theme_seccua/static/src/images/shower.png" class="img img-fluid mx-auto" alt="Odoo • Text and Image"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="new_text_image" data-name="Text - Image">
+            <div class="container pl-0 pr-0">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 pt16 pb16">
+                        <img src="/theme_seccua/static/src/images/URS_WebAssets_tes.png" class="img img-fluid mx-auto" alt="Odoo • Text and Image"/>
+                    </div>
+                    <div class="offset-md-1 col-lg-6 pt16 pb16">
+                        <p>Urspring protects your health and restores your peace of mind by giving you control over the water quality of your entire home.</p>
+                        <div class="s_btn text-left pt16 pb16" data-name="Buttons">
+                            <a href="#" class="link">Our difference</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

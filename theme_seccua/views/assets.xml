@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="_assets_primary_variables" inherit_id="website._assets_primary_variables" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_seccua/static/src/scss/primary_variables.scss"/>
+        </xpath>
+    </template>
+    <template id="assets_frontend" inherit_id="website.assets_frontend" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_seccua/static/src/scss/header.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_seccua/static/src/scss/footer.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_seccua/static/src/scss/fonts.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_seccua/static/src/scss/snippets.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_seccua/static/src/scss/btn.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_seccua/static/src/scss/theme.scss"/>
+        </xpath>
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_seccua/static/src/js/main.js"/>
+        </xpath>
+    </template>
+</odoo>

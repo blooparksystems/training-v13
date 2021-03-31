@@ -1,0 +1,53 @@
+/*----------------------------------------*/
+/*  01. Theme default CSS
+/*----------------------------------------*/
+
+/** @group Base */
+/** @section Reset Styles */
+.s_hero {
+    .flex-column {
+        margin: 0 0 0 40%;
+    }
+    h3 {
+        font-family: 'Noticia Text';
+        font-size: 15px;
+        letter-spacing: 2px;
+        font-weight: 800;
+        color: theme-color('primary');
+    }
+    h4 {
+        font-size: 59px;
+        color: theme-color('primary');
+    }
+    img {
+        height: 30px;
+        width: auto;
+    }
+    .oe_img_bg {
+        background-image: url(../images/snippets/SECCUA_Web_Hero.png);
+    }
+    &.left-sided {
+        .flex-column {
+            margin: 0;
+        }
+        .oe_img_bg {
+            background-image: url(../images/snippets/SECCUA_Web_Hero-right.png);
+        }
+    }
+}
+.left-sided {
+    .row {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+.new_text_image {
+    p {
+        color: #525252;
+        margin-right: 130px;
+        font-family: 'Helvetica_Light-Normal';
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 300;
+    }
+}
